@@ -56,7 +56,7 @@ public class StudentController {
     // DELETE a student
     @DeleteMapping("/{id}")
     public void deleteStudent(@PathVariable Long id) {
-        System.out.println("✅ DELETE called for student ID: " + id);
+        System.out.println("✅ DELETE called for our student ID: " + id);
         studentRepository.deleteById(id);
     }
 }
